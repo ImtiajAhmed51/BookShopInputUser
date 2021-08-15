@@ -9,9 +9,6 @@ public class Start {
     {   
       Scanner sc = new Scanner(System.in);
       Scanner sc1 = new Scanner(System.in);
-      System.out.println("\nName: Md. Imtiaj Ahmed");
-      System.out.println("Id: 21-44828-1");
-      System.out.println("Course: OOP (JAVA) H\n");
       BookShop a = new BookShop();
 	    a.setName("Imtiaj Shop");
       boolean repeat = true;
