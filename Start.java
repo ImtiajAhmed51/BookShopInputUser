@@ -1,6 +1,3 @@
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.ObjectOutputStream;
 import java.lang.*;
 import java.util.Scanner;
 import interfaces.*;
