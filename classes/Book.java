@@ -1,15 +1,12 @@
 package classes;
 import java.lang.*;
 public abstract class Book {
-
     private String isbn;
     private String bookTitle;
     private String authorName;
     private double price;
     private int availableQuantity;
-
     Book() {
-
     }
     Book(String isbn, String bookTitle, String authorName, double price, int availableQuantity) {
         this.isbn = isbn;
@@ -17,7 +14,6 @@ public abstract class Book {
         this.authorName = authorName;
         this.price = price;
         this.availableQuantity = availableQuantity;
-
     }
     public void setIsbn(String isbn) {
         this.isbn = isbn;
@@ -47,7 +43,6 @@ public abstract class Book {
         this.availableQuantity = availableQuantity;
     }
     public int getAvailableQuantity() {
-
         return this.availableQuantity;
     }
     public void setCategory(String category){
@@ -56,30 +51,23 @@ public abstract class Book {
         return "";
     }
     public void setStandard(int standard) {
-        
     }
     public int getStandard() {
         return 0;
-        }
+    }
     public void addQuantity(int amount) {
         if(0<=amount){
             this.availableQuantity=this.availableQuantity+amount;
             System.out.println("\n"+amount+" Pcs Book Added");
-        }
-        else{
+        }else
             System.out.println("\n"+amount+" Pcs Book Add Not Possible");
-        } 
-
     }
     public void sellQuantity(int amount) {
-        if(this.availableQuantity>=amount && amount>0){
-            this.availableQuantity = this.availableQuantity - amount;
+        if(this.availableQuantity>=amount&&amount>0){
+            this.availableQuantity=this.availableQuantity-amount;
             System.out.println("\n"+amount+" Pcs Book Sell");
-        }
-        else{
+        }else
             System.out.println("\n"+amount+" Pcs Book Not Available");
-        }
     }
     public abstract  void showDetails();
-
 }
